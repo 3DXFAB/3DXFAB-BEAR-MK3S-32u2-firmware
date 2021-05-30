@@ -46,7 +46,7 @@ HOODSERIAL_OPTS += -D3DXFAB_MK3_SERIAL
 
 # Custom serial string. Uncomment and Replace with your serial number
 # if you have one.
-SERIAL_NUMBER=3DXFAB230221MY53471
+SERIAL_NUMBER=3DXFABDDMMYYMYXXXXX
 HOODSERIAL_OPTS += -DSERIALID=L\"$(SERIAL_NUMBER)\"
 
 
