@@ -1,4 +1,4 @@
-# BEAR-MK3S-32u2-firmware
+# 3DXFAB-BEAR-MK3S-32u2-firmware
 
 DFU and USB Serial firmware for 3DXFAB BEAR MK3S that use an Atmel 32u2 MCU as a usb to serial bridge. All source in this repository is built against LUFA (C) Dean Camera, pulled on 12-28-2018.
 
