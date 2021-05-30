@@ -58,11 +58,11 @@ extern "C" {
 			#define ARDUINO_MEGAADKR3_PID	0x0044
 
 			#if (VENDORID == 3DXFAB_VID)
-				#define MANUFACTURER_STRING L"3DXFAB Research (3dxfab.com)"
+				#define MANUFACTURER_STRING L"3DXFAB Research & Development (3dxfab.com)"
 				#if (PRODUCTID == 3DXFAB_MK3_PID)
-					#define PRODUCT_STRING L"Original BEAR MK3S"
+					#define PRODUCT_STRING L"3DXFAB BEAR MK3S"
 				#else
-					#define PRODUCT_STRING L"Original BEAR"
+					#define PRODUCT_STRING L"3DXFAB BEAR MK3S"
 				#endif
 			#else
 				#define MANUFACTURER_STRING L"Arduino (www.arduino.cc)"
