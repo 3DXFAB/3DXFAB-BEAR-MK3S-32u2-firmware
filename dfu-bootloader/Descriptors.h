@@ -138,7 +138,7 @@
 		#if (VENDORID == 3DXFAB_VID)
 			#define MANUFACTURER_STRING L"3DXFAB Research (3dxfab.com)"
 			#if (PRODUCTID == 3DXFAB_MK3_PID)
-				#define PRODUCT_STRING L"Original BEAR MK3S DFU"
+				#define PRODUCT_STRING L"3DXFAB BEAR MK3S DFU"
 			#else
 				#define PRODUCT_STRING L"3DXFAB DFU"
 			#endif
