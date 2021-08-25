@@ -28,8 +28,8 @@ LD_FLAGS     = -Wl,--section-start,.data=$(RAM_OFFSET) $(REGS) -flto -fuse-linke
 #   to set PID and product descriptor string
 
 #define ARDUINO_VID				0x2341
-#define 3DXFAB_VID				0x2c99
-#define 3DXFAB_MK3_PID			0x0002
+#define BEAR_VID				0x2c99
+#define BEAR_MK3_PID			0x0002
 #define ARDUINO_UNO_PID			0x0001
 #define ARDUINO_MEGA2560_PID	0x0010
 #define ARDUINO_USBSERIAL_PID	0x003B
@@ -38,11 +38,11 @@ LD_FLAGS     = -Wl,--section-start,.data=$(RAM_OFFSET) $(REGS) -flto -fuse-linke
 #define ARDUINO_UNOR3_PID		0x0043
 #define ARDUINO_MEGAADKR3_PID	0x0044
 
-HOODSERIAL_OPTS = -DVENDORID=3DXFAB_VID
-HOODSERIAL_OPTS += -DPRODUCTID=3DXFAB_MK3_PID
+HOODSERIAL_OPTS = -DVENDORID=BEAR_VID
+HOODSERIAL_OPTS += -DPRODUCTID=BEAR_MK3_PID
 
 # Read 3DXFAB BEAR MK3S serial from EEPROM
-HOODSERIAL_OPTS += -D3DXFAB_MK3_SERIAL
+HOODSERIAL_OPTS += -DBEAR_MK3_SERIAL
 
 # Custom serial string. Uncomment and Replace with your serial number
 # if you have one.

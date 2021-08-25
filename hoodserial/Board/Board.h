@@ -47,8 +47,8 @@ extern "C" {
 
 			/* Product-specific definitions: */
 			#define ARDUINO_VID				0x2341
-			#define 3DXFAB_VID				0x2c99
-			#define 3DXFAB_MK3_PID			0x0002
+			#define BEAR__VID				0x2c99
+			#define BEAR__MK3_PID			0x0002
 			#define ARDUINO_UNO_PID			0x0001
 			#define ARDUINO_MEGA2560_PID	0x0010
 			#define ARDUINO_USBSERIAL_PID	0x003B
@@ -57,9 +57,9 @@ extern "C" {
 			#define ARDUINO_UNOR3_PID		0x0043
 			#define ARDUINO_MEGAADKR3_PID	0x0044
 
-			#if (VENDORID == 3DXFAB_VID)
+			#if (VENDORID == BEAR__VID)
 				#define MANUFACTURER_STRING L"3DXFAB Research & Development (3dxfab.com)"
-				#if (PRODUCTID == 3DXFAB_MK3_PID)
+				#if (PRODUCTID == BEAR__MK3_PID)
 					#define PRODUCT_STRING L"3DXFAB BEAR MK3S"
 				#else
 					#define PRODUCT_STRING L"3DXFAB BEAR MK3S"

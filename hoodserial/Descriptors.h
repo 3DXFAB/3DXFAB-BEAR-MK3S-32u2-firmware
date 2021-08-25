@@ -125,7 +125,7 @@ along with Hoodloader2.  If not, see <http://www.gnu.org/licenses/>.
 			STRING_ID_Language     = 0, /**< Supported Languages string descriptor ID (must be zero) */
 			STRING_ID_Manufacturer = 1, /**< Manufacturer string ID */
 			STRING_ID_Product      = 2, /**< Product string ID */
-#if defined(SERIALID) || defined(3DXFAB_MK3_SERIAL)
+#if defined(SERIALID) || defined(BEAR_MK3_SERIAL)
 			STRING_ID_Serial	   = 3, /**< Serial string ID */
 #endif
 		};

@@ -129,15 +129,15 @@
 		#endif
 
 		#define ARDUINO_VID					0x2341
-		#define 3DXFAB_VID					0x2c99
-		#define 3DXFAB_MK3_PID				0x0002
+		#define BEAR_VID					0x2c99
+		#define BEAR_MK3_PID				0x0002
 		#define ARDUINO_UNO_PID				0x0043 // R3 (0001 R1)
 		#define ARDUINO_MEGA_PID			0x0042 // R3 (0010 R1)
 		#define ARDUINO_MEGA_ADK_PID		0x0044 // R3 (003F R1)
 
-		#if (VENDORID == 3DXFAB_VID)
+		#if (VENDORID == BEAR_VID)
 			#define MANUFACTURER_STRING L"3DXFAB Research (3dxfab.com)"
-			#if (PRODUCTID == 3DXFAB_MK3_PID)
+			#if (PRODUCTID == BEAR_MK3_PID)
 				#define PRODUCT_STRING L"3DXFAB BEAR MK3S DFU"
 			#else
 				#define PRODUCT_STRING L"3DXFAB DFU"

@@ -89,7 +89,7 @@ const USB_Descriptor_Device_t DESCRIPTOR_PROGMEM DeviceDescriptor =
 
 	.ManufacturerStrIndex   = STRING_ID_Manufacturer,
 	.ProductStrIndex        = STRING_ID_Product,
-#if defined(SERIALID) || defined(3DXFAB_MK3_SERIAL)
+#if defined(SERIALID) || defined(BEAR__MK3_SERIAL)
 	.SerialNumStrIndex      = STRING_ID_Serial,
 #else
 	.SerialNumStrIndex      = USE_INTERNAL_SERIAL,
@@ -229,8 +229,8 @@ const USB_Descriptor_String_t DESCRIPTOR_PROGMEM ProductString = USB_STRING_DESC
 const USB_Descriptor_String_t DESCRIPTOR_PROGMEM SerialString = USB_STRING_DESCRIPTOR(SERIALID);
 #endif
 
-#ifdef 3DXFAB_MK3_SERIAL
-static void read_3dxfab_serial(void)
+#ifdef BEAR__MK3_SERIAL
+static void read_bear_serial(void)
 {
 	uint8_t* addr = (uint8_t*)256;
 	uint8_t count = 0;
@@ -316,10 +316,10 @@ uint16_t CALLBACK_USB_GetDescriptor(const uint16_t wValue,
 				Address = &SerialString;
 				Size    = STRING_PROGMEM(SerialString.Header.Size);
 			}
-#elif defined(3DXFAB_MK3_SERIAL)
+#elif defined(BEAR__MK3_SERIAL)
 			else if (DescriptorNumber == STRING_ID_Serial)
 			{
-				read_3dxfab_serial();
+				read_bear_serial();
 			}
 #endif
 			break;

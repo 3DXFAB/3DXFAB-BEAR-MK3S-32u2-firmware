@@ -31,13 +31,13 @@ FLASH_SIZE_KB         = 32
 BOOT_SECTION_SIZE_KB  = 4
 
 #define ARDUINO_VID					0x2341
-#define 3DXFAB_VID					0x2c99
-#define 3DXFAB_MK3_PID				0x0002
+#define BEAR__VID					0x2c99
+#define BEAR__MK3_PID				0x0002
 #define ARDUINO_UNO_PID				0x0043 // R3 (0001 R1)
 #define ARDUINO_MEGA_PID			0x0042 // R3 (0010 R1)
 #define ARDUINO_MEGA_ADK_PID		0x0044 // R3 (003F R1)
-EXTRA_OPTS = -DVENDORID=3DXFAB_VID
-EXTRA_OPTS += -DPRODUCTID=3DXFAB_MK3_PID
+EXTRA_OPTS = -DVENDORID=BEAR__VID
+EXTRA_OPTS += -DPRODUCTID=BEAR__MK3_PID
 
 # Bootloader address calculation formulas
 # Do not modify these macros, but rather modify the dependent values above.
